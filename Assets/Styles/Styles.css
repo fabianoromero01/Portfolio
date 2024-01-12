@@ -1,0 +1,153 @@
+:root{
+    --bg-body: #222;
+    --txt-body: #f0f0f0;
+    --family-body: system-ui, -apple-system,
+    BlinkMacSystemFont, "Segou UI", Roboto, Oxygen,
+    Ubuntu, Catarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.5;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-body);
+    color: var(--txt-body);
+    font-family: var(--family-body);
+    font-size: 200px;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    background-color: #0003;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700px;
+}
+.logo span{
+    color: purple;
+    font-size: 35px;
+}
+
+.menu-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.list-link{
+    transition: color .3s;
+
+}
+.list-link:hover{
+    color: purple;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.actions button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+button.btn-open{
+    font-size: 28px;
+}
+
+
+.btn-close{
+    display: none;
+}
+
+section{
+    color:purple; 
+    font-size: 1em; 
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.hero{
+    display: flex;
+}
+
+.texto{
+    float: left;
+    width: 60%;
+    color: white;
+    padding: 12px;
+    flex: 1;
+}
+
+.imagen{
+    float: right;
+    width: 80%;
+}
+
+.sobre-mi{
+    color: white;
+    text-align: center;
+}
+
+.contenido{
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+}
+
+.icons{
+    font-size: 2em;
+}
+
+
